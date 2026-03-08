@@ -1,6 +1,6 @@
 #define DEFAULT_SPEED 60     //rychlost robota
 #define MAX_RANG 520         //maximální dosah
-#define ADC_SOLUTION 1023.0  //ADC apřesnost pro Arduino Nano
+#define ADC_SOLUTION 1023.0  //ADC přesnost pro Arduino Nano
 #define OBSTACLE_DIST 10     // vzdálenost v cm, kdy začne objíždět
 #define AVOID_SPEED 80       // rychlost při objíždění
 #define TURN_TIME 420        // čas v ms potřebný pro otočení o 90 stupňů
