@@ -1,5 +1,8 @@
-SEN0307
+TB6612FNG Dual Motor Driver
+https://wiki.dfrobot.com/dri0044/
+
+SEN0307 - Sonic Sensor
 https://wiki.dfrobot.com/sen0307/
 
-QRE1113 - 7x
+QRE1113 - IR Sensors
 https://cz.mouser.com/ProductDetail/onsemi/QRE1113?qs=ne66E0WZ%2FFkJiYCW1J5zEw%3D%3D&mgh=1&utm_id=20232119985&utm_source=google&utm_medium=cpc&utm_marketing_tactic=emeacorp&gad_source=1&gad_campaignid=20236886555&gbraid=0AAAAADn_wf2RDrF0zWoaI29nl7gL0DFuj&gclid=Cj0KCQiA2bTNBhDjARIsAK89wlHlwmSoqPLAj4eatgIT4BcMzFec-M_QknPL3xSpxJGMrYy7HftXDTAaAgjGEALw_wcB
