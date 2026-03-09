@@ -129,8 +129,7 @@ void linefollow() {
   } else if (IR1 == 0 && IR7 == 1) { //čára vpravo
     sharpRight();
   } else if (IR1 == 1 && IR7 == 1) { //křižovatka
-    sharpLeft();
-    delay(50);
+    intersection();
   } else {
     int Lspeed = DEFAULT_SPEED + adjustment;
     int Rspeed = DEFAULT_SPEED - adjustment;
@@ -160,14 +159,25 @@ void sharpRight() {
   digitalWrite(DIR2, LOW);
   analogWrite(PWM2, DEFAULT_SPEED);
 }
-/*
-void crossOver() { //Na křižovatce robot zatáčí doleva (pravidla Robotix Přerov)
-  digitalWrite(DIR1, LOW);
-  analogWrite(PWM1, DEFAULT_SPEED);
-  digitalWrite(DIR2, HIGH);
-  analogWrite(PWM2, DEFAULT_SPEED);
+
+void intersection() { //Na křižovatce robot zatáčí doleva (pravidla Robotix Přerov)
+  if (IR4 == 0) {
+    stop(); // Krátké zastavení pro stabilizaci
+    delay(50);
+    while(analogRead(U4) < threshold) { 
+      sharpLeft(); 
+    }
+  } else if (IR4 == 1) { //specifická situace, když robot přijede kolmo na křižovatku, tak by se zacyklil
+    moveCustom(AVOID_SPEED, AVOID_SPEED);
+    delay(50);
+    sharpLeft();
+    delay(50);
+    while(analogRead(U4) < threshold) { 
+      sharpLeft(); 
+    }
+  }
 }
-*/
+
 void stop() {
   digitalWrite(DIR1, HIGH);
   analogWrite(PWM1, 0);
