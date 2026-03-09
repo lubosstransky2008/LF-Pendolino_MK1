@@ -4,7 +4,7 @@
 #define OBSTACLE_DIST 10     // vzdálenost v cm, kdy začne objíždět
 #define AVOID_SPEED 80       // rychlost při objíždění
 #define TURN_TIME 420        // čas v ms potřebný pro otočení o 90 stupňů
-#define SIDE_TIME 600        // čas v ms pro jízdu podél kostky
+#define SIDE_TIME 700        // čas v ms pro jízdu podél kostky
 
 // Motor A - Levý
 const int PWM1 = 11;
