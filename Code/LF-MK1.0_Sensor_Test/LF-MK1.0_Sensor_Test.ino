@@ -1,4 +1,5 @@
-// IR Sensory - Prohozené jsou protože jsem debil
+//https://www.arxterra.com/ee444-lab-0/
+// IR Sensory
 #define U7 A1
 #define U6 A2
 #define U5 A3
