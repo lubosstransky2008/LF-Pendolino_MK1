@@ -4,7 +4,6 @@
 bool isOn = false;
 int sensityPin = A0;
 void setup() {
-  // Serial init
   Serial.begin(19200);
 }
 float dist_t, sensity_t;
